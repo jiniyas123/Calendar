@@ -108,6 +108,9 @@ html {
   background-color: #167e56;
 }
 .name-input div{
-  width=0.01%;
-  height=0.01%;
+  width:0.01%;
+  height:0.01%;
+}
+div{
+  background-color: rgb(3, 3, 3);;
 }

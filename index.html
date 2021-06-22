@@ -37,13 +37,45 @@
           <div>Fri</div>
           <div>Sat</div>
         </div>
-        <div class="days">
-            <input type="text" id="name-input">
-            <button id="add-name-btn">Add Name</button>
+        <div class="days" >
+            
+            <button type="menu" id="add-name-btn">Add Name</button>
           </div>
         </div>
       </div>
     </div>
+    <div id="fill">
+    <p><input type="date" id="dateInput"></p>
+    <p><input type="time" id="timeInput"></p>
+    <button id="addBtn">Add</button>
+    <p><button id="sortBtn">Sort</button>
+    <ul></ul>
+    <table id="todoTable">
+      <tr>
+        <td></td>
+        <td>Date</td>
+        <td>Time</td>
+        <td>to-do</td>
+        <td>
+            <select id="categoryFilter">
+
+            </select>
+        </td>
+      </table>
+      <div id='calendar' ></div>
+      <script src="todo.js"></script>
+      <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+          var calendarEl = document.getElementById('calendar');
+          var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth'
+          });
+          calendar.render();
+        });
+
+      </script>  
+      </div>
     
 
     <script src="script.js"></script>
